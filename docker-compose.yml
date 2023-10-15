@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    working_dir: /app/src
+    working_dir: /app/
     environment:
       CHANNEL_ACCESS_TOKEN: ${CHANNEL_ACCESS_TOKEN}
       CHANNEL_SECRET: ${CHANNEL_SECRET}
