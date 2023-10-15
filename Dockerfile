@@ -1,5 +1,5 @@
-FROM ubuntu:22.04
-RUN apt-get update -y && apt-get install -y python3-pip python3-dev
-WORKDIR /app
+FROM python:3.10.13
 COPY . /app/
+WORKDIR /app
 RUN pip install -r requirements.txt
+CMD ["python", "main.py"]
