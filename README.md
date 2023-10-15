@@ -27,7 +27,7 @@ pip install -r requirements.txt
 Run the following command to start the server.
 
 ```bash
-python src/main.py
+python main.py
 ```
 
 ## Deployment
