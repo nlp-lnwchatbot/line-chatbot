@@ -4,3 +4,5 @@ python-dotenv==1.0.0
 requests==2.31.0
 pythainlp==4.0.2
 tensorflow==2.14.0
+pandas==2.1.1
+numpy==1.26.1

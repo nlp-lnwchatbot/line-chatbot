@@ -10,4 +10,4 @@ services:
     ports:
       - ${PORT}:8080
     restart: on-failure
-    command: python main.py
+    command: python3 -u main.py
