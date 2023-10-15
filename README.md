@@ -39,3 +39,25 @@ Run the following command to start the containers.
 ```bash
 docker-compose up
 ```
+
+### Google Cloud Run
+
+1. Build the image.
+
+   ```bash
+   docker build -t gcr.io/<PROJECT_ID>/<IMAGE_NAME> .
+   ```
+
+2. Tag the image.
+
+   ```bash
+   docker tag <IMAGE_ID> gcr.io/<PROJECT_ID>/<IMAGE_NAME>:<TAG>
+   ```
+
+3. Push the image to Google Container Registry.
+
+   ```bash
+   docker push gcr.io/<PROJECT_ID>/<IMAGE_NAME>
+   ```
+
+4. Deploy the image to Google Cloud Run
