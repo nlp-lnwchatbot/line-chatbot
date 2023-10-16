@@ -155,7 +155,7 @@ x = tokenizer.texts_to_sequences(x)
 x = pad_sequences(x)
 
 
-def predict_class(model, dataframeToPredict, threshold=0.75):
+def predict_class(model, dataframeToPredict, threshold=0.6):
     dataframeToPredict = dataframeToPredict["message"].apply(big_cleaning).astype(str)
     dataframeToPredict = tokenizer.texts_to_sequences(dataframeToPredict)
     padded_sequence = pad_sequences(dataframeToPredict, maxlen=x.shape[1])
